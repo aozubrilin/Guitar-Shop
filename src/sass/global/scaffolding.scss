@@ -13,9 +13,11 @@ body {
   min-width: 1020px;
 
   font-family: 'Droid Sans', 'Arial', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $black;
+  overflow-x: hidden;
 }
 
 *,
@@ -55,6 +57,6 @@ a {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1170px;
+  padding: 0 40px;
+  width: 1020px;
 }
