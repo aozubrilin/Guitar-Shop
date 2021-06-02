@@ -1,0 +1,16 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.catalog__sort {
+  margin-bottom: 29px;
+}
+
+.catalog__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}

@@ -1,0 +1,52 @@
+.sort {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2px;
+}
+
+.sort__title {
+  margin: 0;
+  margin-right: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: $black;
+}
+
+.sort__type-item {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.067em;
+  color: #585757;
+}
+
+.sort__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+
+  &--type {
+    .sort__type-item {
+      margin-right: 35px;
+    }
+  }
+
+  &--arrow {
+    margin-left: auto;
+    margin-right: 12px;
+    margin-bottom: 2px;
+
+    a {
+      display: flex;
+      margin-top: 3px;
+    }
+
+    .sort__type-item:not(:last-child) {
+      margin-right: 22px;
+    }
+
+    .sort__type-item:last-child {
+      transform: rotate(180deg);
+    }
+  }
+}

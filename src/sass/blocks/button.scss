@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $white;
+  background-color: #c1c1c1;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  &--orange {
+    background: #e27f00;
+  }
+}

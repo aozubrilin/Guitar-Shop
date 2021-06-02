@@ -1,5 +1,5 @@
-import { extend } from '../../../utils';
-import { ActionType } from '../../action';
+import { extend } from '../../../utils/utils';
+import { ActionType } from '../../actions';
 
 const initialState = {};
 

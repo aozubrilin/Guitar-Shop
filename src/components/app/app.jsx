@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import '../../sass/style.scss';
+import CartContent from '../cart-content/cart-content';
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import MainContent from '../main-content/main-content';
@@ -12,6 +13,9 @@ const App = () => {
       <Switch>
         <Route>
           <MainContent />
+        </Route>
+        <Route>
+          <CartContent />
         </Route>
       </Switch>
       <Footer />
