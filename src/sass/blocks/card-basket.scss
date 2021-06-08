@@ -11,6 +11,7 @@
 }
 
 .card-basket__button-delete {
+  @include base-state;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,11 +25,11 @@
 }
 
 .card-basket__info {
-  margin-right: 97px;
+  margin-right: 21px;
 }
 
 .card-basket__price {
-  margin-top: 4px;
+  margin-top: 2px;
   margin-right: 87px;
   margin-bottom: 0;
   align-self: center;
@@ -44,6 +45,7 @@
 }
 
 .card-basket__button {
+  @include base-state;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +82,7 @@
   margin-bottom: 0px;
   margin-left: auto;
   margin-top: 2px;
+  margin-right: -4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 15px;

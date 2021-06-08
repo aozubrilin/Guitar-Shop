@@ -10,7 +10,10 @@
 
 .catalog__cards {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px 20px;
+}
+
+.catalog__pagination {
+  margin-top: 30px;
 }

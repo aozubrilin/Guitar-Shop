@@ -23,6 +23,7 @@
 }
 
 .breadcrumbs__link {
+  @include base-state;
   font-size: 16px;
   line-height: 19px;
   color: #474747;

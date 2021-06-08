@@ -5,8 +5,9 @@ export const adaptToClient = (data) => {
     name: data.name,
     type: data.type,
     popularity: data.popularity,
-    stings: data.stings,
+    strings: data.strings,
     price: data.price,
+    image: data.image,
   };
 };
 

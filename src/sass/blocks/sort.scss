@@ -29,6 +29,14 @@
     .sort__type-item {
       margin-right: 35px;
     }
+    .sort__type-name {
+      @include base-state;
+      color: #585757;
+
+      &--active {
+        color: $black;
+      }
+    }
   }
 
   &--arrow {
@@ -36,17 +44,23 @@
     margin-right: 12px;
     margin-bottom: 2px;
 
-    a {
-      display: flex;
-      margin-top: 3px;
-    }
-
     .sort__type-item:not(:last-child) {
       margin-right: 22px;
     }
 
     .sort__type-item:last-child {
       transform: rotate(180deg);
+    }
+
+    .sort__type-name {
+      @include base-state;
+      display: flex;
+      margin-top: 3px;
+      color: #6c6c6c;
+
+      &--active {
+        color: $black;
+      }
     }
   }
 }

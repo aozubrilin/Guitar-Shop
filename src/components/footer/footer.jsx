@@ -4,26 +4,35 @@ import Logo from '../logo/logo';
 import { ReactComponent as IconFacebook } from '../../img/facebook.svg';
 import { ReactComponent as IconInstagram } from '../../img/instagram.svg';
 import { ReactComponent as IconTwitter } from '../../img/twitter.svg';
+import logoFooter from '../../img/logo-footer.svg';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__wrapper wrapper">
         <div className="footer__social">
-          <Logo className="footer__logo" />
+          <Logo className="footer__logo" logo={logoFooter} />
           <ul className="social-links">
             <li>
-              <Link className="social-links__link" to="#">
+              <Link
+                className="social-links__link"
+                to="#"
+                aria-label="Faceebook"
+              >
                 <IconFacebook />
               </Link>
             </li>
             <li>
-              <Link className="social-links__link" to="#">
+              <Link
+                className="social-links__link"
+                to="#"
+                aria-label="Instagram"
+              >
                 <IconInstagram />
               </Link>
             </li>
             <li>
-              <Link className="social-links__link" to="#">
+              <Link className="social-links__link" to="#" aria-label="Twitter">
                 <IconTwitter />
               </Link>
             </li>

@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux';
-import { data } from './reducers/data/data';
-import { app } from './reducers/app/app';
+import { basket } from './reducers/basket/basket';
+import { catalog } from './reducers/catalog/catalog';
 
 export const NameSpace = {
-  DATA: `data`,
-  APP: `app`,
+  CATALOG: `catalog`,
+  BASKET: `basket`,
 };
 
 export default combineReducers({
-  [NameSpace.DATA]: data,
-  [NameSpace.APP]: app,
+  [NameSpace.CATALOG]: catalog,
+  [NameSpace.BASKET]: basket,
 });

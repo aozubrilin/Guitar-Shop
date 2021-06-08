@@ -25,8 +25,9 @@
     position: absolute;
     top: calc(100% - 33px);
     right: 0;
-    width: 878px;
+    width: 863px;
     height: 288px;
+    overflow: hidden;
 
     background-image: url('../../img/guitar.png');
     background-repeat: no-repeat;

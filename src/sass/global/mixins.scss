@@ -11,6 +11,54 @@
   }
 
   &:active {
-    color: rgba(71, 71, 71, 0.5);
+    color: #474747;
+    opacity: 0.5;
+  }
+}
+
+@mixin button-state {
+  &:hover,
+  &:focus {
+    background: #585757;
+  }
+
+  &:active {
+    background: #9f9e9e;
+  }
+}
+
+@mixin button-white-state {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    background: inherit;
+  }
+
+  &:active {
+    border: 1px solid #6c6c6c;
+    opacity: 0.5;
+    background: inherit;
+  }
+}
+
+@mixin button-orange-state {
+  &:hover,
+  &:focus {
+    background: #ffa839;
+  }
+
+  &:active {
+    background: #da8b26;
+  }
+}
+
+@mixin base-state {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
