@@ -10,8 +10,6 @@ export const ActionType = {
   CHANGE_POPUP_FLAG: `CHANGE_POPUP_FLAG`,
   CHANGE_CURRENT_GUITAR: `CHANGE_CURRENT_GUITAR`,
   CHANGE_GUITAR_ADDED_FLAG: `CHANGE_GUITAR_ADDED_FLAG`,
-  CHANGE_SORT_TYPE_DISABLED: `CHANGE_SORT_TYPE_DISABLED`,
-  CHANGE_COUNT_STRINGS_DISABLED: `CHANGE_COUNT_STRINGS_DISABLED`,
 
   ADD_GUITAR_TO_BASKET: `ADD_GUITAR_TO_BASKET`,
   DELETE_GUITAR: `DELETE_GUITAR`,
@@ -92,14 +90,4 @@ export const deleteGuitar = (guitar) => ({
 export const changeGuitarCount = (guitars) => ({
   type: ActionType.CHANGE_GUITAR_COUNT,
   payload: guitars,
-});
-
-export const changeTypeGuitarsDisabled = (types) => ({
-  type: ActionType.CHANGE_SORT_TYPE_DISABLED,
-  payload: types,
-});
-
-export const changeStringCountDisabled = (strings) => ({
-  type: ActionType.CHANGE_COUNT_STRINGS_DISABLED,
-  payload: strings,
 });

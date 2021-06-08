@@ -2,7 +2,6 @@ import {
   extend,
   getPriceGuitars,
   getCheckedValues,
-  changeDisabledChecked,
 } from '../../../utils/utils';
 import { ActionType } from '../../actions';
 
@@ -81,21 +80,6 @@ const catalog = (state = initialState, action) => {
     case ActionType.CHANGE_GUITAR_ADDED_FLAG:
       return extend(state, {
         isGuitarAdded: action.payload,
-      });
-    case ActionType.CHANGE_SORT_TYPE_DISABLED:
-      const newTypes = changeDisabledChecked(action.payload, state.guitarTypes);
-      return extend(state, {
-        guitarTypes: newTypes,
-      });
-
-    case ActionType.CHANGE_COUNT_STRINGS_DISABLED:
-      const newStringsCount = changeDisabledChecked(
-        action.payload,
-        state.countStrings
-      );
-
-      return extend(state, {
-        countStrings: newStringsCount,
       });
 
     default:

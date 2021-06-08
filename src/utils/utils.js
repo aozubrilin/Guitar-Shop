@@ -116,8 +116,3 @@ export const getPromoDiscount = (promoCode, totalPrice) => {
     }
   }
 };
-
-export const changeDisabledChecked = (avalible, checked) => {
-  const newArray = checked.filter((i) => !avalible.includes(i));
-  return newArray;
-};

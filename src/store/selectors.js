@@ -20,6 +20,8 @@ export const getGuitarBasket = ({ basket }) => basket.guitars;
 export const getIsGuitarAdded = ({ catalog }) => catalog.isGuitarAdded;
 export const getCurrentGuitarCatalog = ({ catalog }) => catalog.currentGuitar;
 export const getCurrentGuitarBasket = ({ basket }) => basket.currentGuitar;
+export const getCheckedGuitarTypes = ({ catalog }) => catalog.guitarTypes;
+export const getCheckedCountStrings = ({ catalog }) => catalog.countStrings;
 
 export const getCurrentGuitars = createSelector(
   getGuitars,

@@ -1,15 +1,17 @@
 import React from 'react';
-import { FilterField } from '../../const';
+import PropTypes, { number, string } from 'prop-types';
+import { FilterField, FiterType } from '../../const';
 
 const CheckboxList = ({ type, onChange, checkedItems, avalibleItems }) => {
   const items = FilterField[type];
+  const isFiterCountStrings = type === FiterType.STRINGS;
 
   const isChecked = (value) => {
     return checkedItems.includes(String(value));
   };
 
   const isDisabled = (value) => {
-    if (avalibleItems.length !== 0) {
+    if (avalibleItems.length !== 0 && isFiterCountStrings) {
       return !avalibleItems.some((item) => item === value);
     }
     return false;
@@ -27,7 +29,7 @@ const CheckboxList = ({ type, onChange, checkedItems, avalibleItems }) => {
             value={item.value}
             onChange={onChange}
             checked={isChecked(item.value)}
-            disabled={isDisabled(item.value)}
+            disabled={isFiterCountStrings ? isDisabled(item.value) : false}
           />
           <label className="form__checkbox-lable" htmlFor={item.nameField}>
             {item.label}
@@ -36,6 +38,17 @@ const CheckboxList = ({ type, onChange, checkedItems, avalibleItems }) => {
       ))}
     </ul>
   );
+};
+
+CheckboxList.propTypes = {
+  type: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  checkedItems: PropTypes.oneOfType([
+    PropTypes.arrayOf(string),
+    PropTypes.arrayOf(number),
+  ]).isRequired,
+
+  avalibleItems: PropTypes.arrayOf(number),
 };
 
 export default CheckboxList;
