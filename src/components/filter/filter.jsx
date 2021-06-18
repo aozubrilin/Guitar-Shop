@@ -23,6 +23,14 @@ const Filter = () => {
     return strings.filter((e, index, items) => items.indexOf(e) === index);
   };
 
+  const getAvailableTypes = () => {
+    return Object.keys(CountStringsByType).filter((key) =>
+      CountStringsByType[key].some((item) =>
+        checkedCountStrings.includes(String(item))
+      )
+    );
+  };
+
   const handlGuitarTypeChange = (evt) => {
     const value = evt.target.value;
     dispatch(changeGuitarTypes(value));
@@ -45,6 +53,7 @@ const Filter = () => {
             type={FiterType.TYPE}
             onChange={handlGuitarTypeChange}
             checkedItems={checkedGuitarTypes}
+            avalibleItems={getAvailableTypes()}
           />
         </FormFieldset>
         <FormFieldset title="Количество струн">

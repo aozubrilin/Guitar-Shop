@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-width: 1020px;
+  min-width: 940px;
 
   font-family: 'Droid Sans', 'Arial', sans-serif;
   font-weight: 400;
@@ -55,8 +55,6 @@ a {
 
 .wrapper {
   position: relative;
-  width: 100%;
+  width: 940px;
   margin: 0 auto;
-  padding: 0 40px;
-  width: 1020px;
 }

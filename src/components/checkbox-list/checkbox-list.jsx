@@ -11,6 +11,13 @@ const CheckboxList = ({ type, onChange, checkedItems, avalibleItems }) => {
   };
 
   const isDisabled = (value) => {
+    if (
+      checkedItems.length === 0 &&
+      avalibleItems.length !== 0 &&
+      !isFiterCountStrings
+    ) {
+      return !avalibleItems.some((item) => item === value);
+    }
     if (avalibleItems.length !== 0 && isFiterCountStrings) {
       return !avalibleItems.some((item) => item === value);
     }
@@ -29,7 +36,7 @@ const CheckboxList = ({ type, onChange, checkedItems, avalibleItems }) => {
             value={item.value}
             onChange={onChange}
             checked={isChecked(item.value)}
-            disabled={isFiterCountStrings ? isDisabled(item.value) : false}
+            disabled={isDisabled(item.value)}
           />
           <label className="form__checkbox-lable" htmlFor={item.nameField}>
             {item.label}
@@ -48,7 +55,10 @@ CheckboxList.propTypes = {
     PropTypes.arrayOf(number),
   ]).isRequired,
 
-  avalibleItems: PropTypes.arrayOf(number),
+  avalibleItems: PropTypes.oneOfType([
+    PropTypes.arrayOf(string),
+    PropTypes.arrayOf(number),
+  ]).isRequired,
 };
 
 export default CheckboxList;

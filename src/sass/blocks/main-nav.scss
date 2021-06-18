@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   flex-grow: 1;
-  max-width: 467px;
+  max-width: 491px;
 
   &--user-list {
     justify-content: space-around;
@@ -21,6 +21,7 @@
 
 .main-nav__list--user-list {
   .main-nav__item {
+    margin: 0;
     padding-top: 5px;
     &--cart {
       padding-top: 2px;
@@ -31,14 +32,17 @@
 }
 
 .main-nav__link {
+  padding-left: 10px;
+  padding-right: 10px;
+
   font-size: 14px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   @include link-state;
   color: $black;
 }
 
 .main-nav__logo {
-  margin-right: 114px;
+  margin-right: 105px;
 }
 
 .main-nav__cart-quantity {
