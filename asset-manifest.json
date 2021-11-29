@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Guitar-Shop/static/css/main.bab56a38.chunk.css",
-    "main.js": "/Guitar-Shop/static/js/main.fab80d03.chunk.js",
-    "main.js.map": "/Guitar-Shop/static/js/main.fab80d03.chunk.js.map",
+    "main.js": "/Guitar-Shop/static/js/main.e2a74b63.chunk.js",
+    "main.js.map": "/Guitar-Shop/static/js/main.e2a74b63.chunk.js.map",
     "runtime-main.js": "/Guitar-Shop/static/js/runtime-main.a3d6b01b.js",
     "runtime-main.js.map": "/Guitar-Shop/static/js/runtime-main.a3d6b01b.js.map",
     "static/js/2.0efb3068.chunk.js": "/Guitar-Shop/static/js/2.0efb3068.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.a3d6b01b.js",
     "static/js/2.0efb3068.chunk.js",
     "static/css/main.bab56a38.chunk.css",
-    "static/js/main.fab80d03.chunk.js"
+    "static/js/main.e2a74b63.chunk.js"
   ]
 }
