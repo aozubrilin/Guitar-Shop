@@ -22,7 +22,7 @@ const App = () => {
   }, [isPopupOpen]);
 
   return (
-    <Router>
+    <Router basename="/Guitar-Shop">
       <Header />
       <Switch>
         <Route exact path={AppRoute.ROOT.url}>
