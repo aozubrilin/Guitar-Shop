@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BACKEND_URL = `../data/data.json`;
+const BACKEND_URL = `../Guitar-Shop/data/data.json`;
 const REQUEST_TIMEOUT = 5000;
 
 export const createAPI = () => {
